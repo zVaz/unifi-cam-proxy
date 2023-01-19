@@ -4,7 +4,7 @@ WORKDIR /app
 RUN apk update
 
 RUN apk add --update gcc libc-dev linux-headers libusb-dev
-RUN apk add --update ffmpeg=5.1.2-r3 netcat-openbsd git
+RUN apk add --update ffmpeg netcat-openbsd git
 
 
 COPY . .
