@@ -1,7 +1,7 @@
 FROM python:3.8-alpine3.10
 WORKDIR /app
 
-RUN cat > /etc/apk/repositories << https://dl-cdn.alpinelinux.org/alpine/v$(cut -d'.' -f1,2 /etc/alpine-release)/community/
+RUN cat > /etc/apk/repositories << https://dl-cdn.alpinelinux.org/alpine/edge/community
 
 RUN apk update
 
