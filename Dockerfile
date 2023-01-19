@@ -1,7 +1,5 @@
-FROM python:3.8-alpine3.10
+FROM python:3.8-alpine
 WORKDIR /app
-
-RUN apk add ffmpeg --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community
 
 RUN apk update
 
