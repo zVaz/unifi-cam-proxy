@@ -8,6 +8,8 @@ RUN apk add --update ffmpeg netcat-openbsd git
 
 
 COPY . .
+
+RUN pip install --upgrade pip
 RUN pip install .
 
 COPY ./docker/entrypoint.sh /
