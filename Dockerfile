@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
 WORKDIR /app
 
-RUN apk update && apk add --update gcc libc-dev linux-headers libusb-dev && apk add --update ffmpeg netcat-openbsd git cargo zlib-dev
+RUN apk update && apk add --update gcc libc-dev linux-headers libusb-dev && apk add --update ffmpeg netcat-openbsd git cargo zlib-dev libjpeg-turbo-dev
 
 COPY . .
 
